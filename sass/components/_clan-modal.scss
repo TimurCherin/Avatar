@@ -1,0 +1,62 @@
+.clan-modal {
+    width: 600px;
+    height: 404px;
+    background-image: url(/images/modal-clan.png);
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    padding: 100px 80px 23px 80px;
+    z-index: 2;
+    text-align: center;
+    transition-duration: 800ms;
+    transition-delay: 250ms;
+    transform: scale(1);
+
+    &__text {
+        text-align: left;
+        color: #0B0E66;
+        font-family: $main-font;
+        font-size: 24px;
+        line-height: 1.2;
+        margin: 0px;
+        margin-top: 12px;
+    }
+
+    &__button {
+        font-family: $second-font;
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+        color: #26C7EA;   
+        width: 260px;
+        height: 80px;
+        background-color: #0B0E66;
+        border: 3px solid #26C7EA;
+        border-radius: 45px 0px 45px 0px;
+        margin-top: 47px;
+        cursor: pointer;
+    }
+
+    &__btn {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+        border: 0px;
+    }
+
+    &__input {
+        width: 440px;
+        color: #0B0E66;
+        height: 40px;
+        color: #F2EAEA;
+        border: 2px solid #0B0E66;
+        cursor: pointer;
+    }
+}
+
+.is-hidden {
+    transform: scale(0) rotate(180deg);
+}

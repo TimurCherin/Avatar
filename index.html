@@ -33,12 +33,29 @@
                             Борись разом з нами!
                             </p>
                         </div>
-                        <button type="button" class="main-section__button">Приєднатися до клану</button>
+                        <button type="button" class="main-section__button" data-open-modal>Приєднатися до клану</button>
                         <ul class="main-section__social">
                             <li class="main-section__social-item"><a href="./"><svg class="main-section__social-icon"><use href="./images/symbol-defs.svg#icon-inst"></use></svg></a></li>
                             <li class="main-section__social-item"><a href="./"><svg class="main-section__social-icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
                             <li class="main-section__social-item"><a href="./"><svg class="main-section__social-icon"><use href="./images/symbol-defs.svg#icon-youtube"></use></svg></a></li>
                         </ul>
+                    </div>
+                    <div class="clan-modal is-hidden" data-backdrop>
+                        <button class="clan-modal__btn" type="button" data-close-modal>
+                            <img src="./images/close.png" alt="close">
+                        </button>
+                        <p class="clan-modal__text">Ім’я</p>
+                        <input class="clan-modal__input" type="text">
+                        <p class="clan-modal__text">Email</p>
+                        <input class="clan-modal__input" type="text">
+                        <button class="clan-modal__button" data-clan-modal>Приєднатися до клану</button>
+                    </div>
+                    <div class="join-modal" data-join-backdrop>
+                        <button class="join-modal__btn" type="button" data-close-join-modal>
+                            <img src="./images/close-join.png" alt="close">
+                        </button>
+                        <h2 class="join-modal__title">Вітаємо у нашому клані</h2>
+                        <h2 class="join-modal__text">Твій Банші вже в дорозі.<br>Скоро побачимось на Пандорі.</h2>
                     </div>
                 </div>
                 <div class="description-section">
@@ -102,4 +119,38 @@
             <img src="./images/img-section.png" alt="img">
         </section>    
     </main> 
+    <script>
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+          clanModalBtn: document.querySelector("[data-clan-modal]"),
+        };
+  
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+        refs.clanModalBtn.addEventListener("click", toggleModal);
+  
+        refs.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+      </script>
+      <script>
+        const refs1 = {
+          openModalBtn: document.querySelector("[data-clan-modal]"),                                      
+          closeModalBtn: document.querySelector("[data-close-join-modal]"),
+          backdrop: document.querySelector("[data-join-backdrop]"),
+        };
+  
+        refs1.openModalBtn.addEventListener("click", toggleModal);
+        refs1.closeModalBtn.addEventListener("click", toggleModal);
+  
+        refs1.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs1.backdrop.classList.toggle("is-hidden");
+        }
+      </script>
 </body>

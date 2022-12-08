@@ -1,0 +1,41 @@
+.join-modal {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    background-image: url(../../images/join-modal.png);
+    z-index: 45;
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    transition-duration: 800ms;
+    transition-delay: 250ms;
+    padding-top: 50px;
+    
+
+    &__btn {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background-color: none;
+        border: 0px;
+        padding: 0px;
+    }
+
+    &__title {
+        font-family: $second-font;
+        font-size: 24px;
+        line-height: 1.25;
+        color: #ffff;
+        margin-bottom: 80px;
+    }
+
+    &__text {
+        font-family: $second-font;
+        font-size: 24px;
+        line-height: 1.25;
+        color: #ffff;
+        text-align: center;
+    }
+}

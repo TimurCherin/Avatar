@@ -249,12 +249,17 @@ body {
 
 h1, h2, h3, h4 {
   margin: 0px;
+  font-weight: 400;
 }
 
 .container {
   width: 1030px;
   margin-left: auto;
   margin-right: auto;
+}
+
+button {
+  cursor: pointer;
 }
 
 .main-section__wrap {
@@ -382,9 +387,10 @@ h1, h2, h3, h4 {
 .language-section__title {
   font-size: 32px;
   line-height: 1.25;
-  color: #1F2426;
+  color: #1f2426;
   text-align: center;
   margin-bottom: 47px;
+  font-family: "HeadlandOne";
 }
 .language-section__list {
   width: 1030px;
@@ -419,7 +425,129 @@ h1, h2, h3, h4 {
 .language-section__item:nth-child(3) {
   margin-bottom: 24px;
 }
+.language-section__text {
+  font-size: 24px;
+  line-height: 1;
+  color: black;
+  font-family: "HeadlandOne";
+}
+.language-section__text:first-child {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.language-section__text:last-child {
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
 .language-section__img {
   width: 152px;
   height: 40px;
+}
+
+.img-section {
+  width: 1360px;
+  height: 268px;
+}
+
+.clan-modal {
+  width: 600px;
+  height: 404px;
+  background-image: url(/images/modal-clan.png);
+  position: fixed;
+  top: 20%;
+  left: 28%;
+  padding: 100px 80px 23px 80px;
+  z-index: 2;
+  text-align: center;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.clan-modal__text {
+  text-align: left;
+  color: #0B0E66;
+  font-family: "Inter";
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0px;
+  margin-top: 12px;
+}
+.clan-modal__button {
+  font-family: "HeadlandOne";
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: #26C7EA;
+  width: 260px;
+  height: 80px;
+  background-color: #0B0E66;
+  border: 3px solid #26C7EA;
+  border-radius: 45px 0px 45px 0px;
+  margin-top: 47px;
+  cursor: pointer;
+}
+.clan-modal__btn {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  border: 0px;
+}
+.clan-modal__input {
+  width: 440px;
+  color: #0B0E66;
+  height: 40px;
+  color: #F2EAEA;
+  border: 2px solid #0B0E66;
+  cursor: pointer;
+}
+
+.is-hidden {
+  -webkit-transform: scale(0) rotate(180deg);
+          transform: scale(0) rotate(180deg);
+}
+
+.join-modal {
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  background-image: url(../../images/join-modal.png);
+  z-index: 45;
+  position: fixed;
+  top: 20%;
+  left: 28%;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+  padding-top: 50px;
+}
+.join-modal__btn {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: none;
+  border: 0px;
+  padding: 0px;
+}
+.join-modal__title {
+  font-family: "HeadlandOne";
+  font-size: 24px;
+  line-height: 1.25;
+  color: white;
+  margin-bottom: 80px;
+}
+.join-modal__text {
+  font-family: "HeadlandOne";
+  font-size: 24px;
+  line-height: 1.25;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
