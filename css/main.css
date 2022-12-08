@@ -262,6 +262,11 @@ button {
   cursor: pointer;
 }
 
+.section-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-section__wrap {
   width: 1360px;
   height: 700px;
@@ -272,6 +277,8 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-section__logo {
   width: 244px;
@@ -497,12 +504,12 @@ button {
   right: 16px;
   cursor: pointer;
   border: 0px;
+  background-color: transparent;
 }
 .clan-modal__input {
   width: 440px;
   color: #0B0E66;
   height: 40px;
-  color: #F2EAEA;
   border: 2px solid #0B0E66;
   cursor: pointer;
 }
@@ -536,6 +543,7 @@ button {
   background-color: none;
   border: 0px;
   padding: 0px;
+  background-color: transparent;
 }
 .join-modal__title {
   font-family: "HeadlandOne";
