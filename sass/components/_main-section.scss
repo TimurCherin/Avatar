@@ -1,9 +1,6 @@
 .main-section {
 
     &__wrap {
-        width: 1360px;
-        height: 700px;
-        padding: 24px 0px 19px 0px;
         background-image: url("../../images/main.png");
         background-size: cover;
         background-image:  linear-gradient(90.15deg,
@@ -17,12 +14,19 @@
         margin-right: auto;
 
         @media screen and (min-width: 480px) {
-            width: 480px;
+           
         }
         
         @media screen and (min-width: 768px) {
-            width: 768px;
+            
         }
+
+        @media screen and (min-width: 1360px) {
+            // width: 1360px;
+            // height: 700px;
+            padding: 24px 0px 19px 0px;
+        }
+        
     }
 
     &__logo {
@@ -38,29 +42,29 @@
             
         }
         
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1360px) {
             
         }
     }
 
     &__description { 
-        width: 376px;
-        height: 263px;
+        width: 240px;
+        height: 350px;
         color: #ffff;
         font-size: 20px;
         line-height: 1.2;
 
         @media screen and (min-width: 480px) {
-            width: 240px;
-            height: 350px;
+            
         }
         
         @media screen and (min-width: 768px) {
             
         }
         
-        @media screen and (min-width: 1200px) {
-            
+        @media screen and (min-width: 1360px) {
+            width: 376px;
+            height: 263px;
         }
 
         & p{
@@ -69,22 +73,23 @@
     }
 
     &__avatar {
-        position: absolute;
-        bottom: 0px;
-        right: 110px;
+            width: 450px;
+            right: 0px;
+            bottom: 0px;
 
         @media screen and (min-width: 480px) {
-            width: 450px;
-            height: 600px;
-            right: 0px;
+
         }
         
         @media screen and (min-width: 768px) {
             
         }
         
-        @media screen and (min-width: 1200px) {
-            
+        @media screen and (min-width: 1360px) {
+            width: 620px;
+            height: 520px;
+            position: absolute;
+            right: 110px;
         }
     }
 
@@ -110,7 +115,7 @@
             
         }
         
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1360px) {
             
         }
     }
@@ -124,31 +129,49 @@
         list-style: none;
         margin: 0px;
         position: absolute;
-        top: 225px;
-        right: 164px;
 
         @media screen and (min-width: 480px) {
-            display: flex;
+            display: flex; 
             right: 80px;
-            top: 40px;  
+            top: 40px; 
         }
         
         @media screen and (min-width: 768px) {
             
         }
 
+        @media screen and (min-width: 1360px) {
+            top: 220px;
+            right: 164px;
+            display: block;
+        }
+
+        &-item {
+            margin-right: 15px;
+
+            @media screen and (min-width: 480px) {
+                 
+            }
+            
+            @media screen and (min-width: 768px) {
+                margin-right: 0px;
+            }
+    
+            @media screen and (min-width: 1360px) {
+                
+            }
+
+            &:not(:last-child) {
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
         &-icon {
             width: 32px;
             height: 30px;    
             fill: #ffff;
-
-            @media screen and (min-width: 480px) {
-                margin-right: 15px;
-            }
-        
-            &-item:not(:last-child) {
-                margin-bottom: 25px;
-            }
         }
     }
 }

@@ -16,14 +16,14 @@ h1,h2,h3,h4 {
     margin-right: auto;
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+        width: 440px;
     }
     
     @media screen and (min-width: 768px) {
-        width: 768px;
+        width: 650px;
     }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1360px) {
         width: 1030px;
     }
 }
@@ -35,4 +35,20 @@ button {
 .section-container {
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    
+    @media screen and (min-width: 1360px) {
+        width: 1360px;
+    }
+}
+
+ul {
+    padding: 0px;
 }
