@@ -15,12 +15,32 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
     }
 
     &__logo {
         width: 244px;
         height: 96px;
         margin-bottom: 171px;
+
+        @media screen and (min-width: 480px) {
+            margin-bottom: 100px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1200px) {
+            
+        }
     }
 
     &__description { 
@@ -29,6 +49,19 @@
         color: #ffff;
         font-size: 20px;
         line-height: 1.2;
+
+        @media screen and (min-width: 480px) {
+            width: 240px;
+            height: 350px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1200px) {
+            
+        }
 
         & p{
             margin: 0px;
@@ -39,6 +72,20 @@
         position: absolute;
         bottom: 0px;
         right: 110px;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 600px;
+            right: 0px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1200px) {
+            
+        }
     }
 
     &__button {
@@ -54,6 +101,18 @@
         border: 3px solid #26C7EA;
         border-radius: 45px 0px 45px 0px;
         margin-top: 47px;
+
+        @media screen and (min-width: 480px) {
+            margin-top: 30px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1200px) {
+            
+        }
     }
 
     &__arrov {
@@ -68,14 +127,28 @@
         top: 225px;
         right: 164px;
 
+        @media screen and (min-width: 480px) {
+            display: flex;
+            right: 80px;
+            top: 40px;  
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+
         &-icon {
             width: 32px;
             height: 30px;    
             fill: #ffff;
-        }
 
-        &-item:not(:last-child) {
-            margin-bottom: 25px;
+            @media screen and (min-width: 480px) {
+                margin-right: 15px;
+            }
+        
+            &-item:not(:last-child) {
+                margin-bottom: 25px;
+            }
         }
     }
 }

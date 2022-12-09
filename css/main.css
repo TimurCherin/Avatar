@@ -257,6 +257,21 @@ h1, h2, h3, h4 {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1030px;
+  }
+}
 
 button {
   cursor: pointer;
@@ -280,10 +295,25 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .main-section__wrap {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-section__wrap {
+    width: 768px;
+  }
+}
 .main-section__logo {
   width: 244px;
   height: 96px;
   margin-bottom: 171px;
+}
+@media screen and (min-width: 480px) {
+  .main-section__logo {
+    margin-bottom: 100px;
+  }
 }
 .main-section__description {
   width: 376px;
@@ -292,6 +322,12 @@ button {
   font-size: 20px;
   line-height: 1.2;
 }
+@media screen and (min-width: 480px) {
+  .main-section__description {
+    width: 240px;
+    height: 350px;
+  }
+}
 .main-section__description p {
   margin: 0px;
 }
@@ -299,6 +335,13 @@ button {
   position: absolute;
   bottom: 0px;
   right: 110px;
+}
+@media screen and (min-width: 480px) {
+  .main-section__avatar {
+    width: 450px;
+    height: 600px;
+    right: 0px;
+  }
 }
 .main-section__button {
   font-family: "HeadlandOne";
@@ -314,6 +357,11 @@ button {
   border-radius: 45px 0px 45px 0px;
   margin-top: 47px;
 }
+@media screen and (min-width: 480px) {
+  .main-section__button {
+    margin-top: 30px;
+  }
+}
 .main-section__arrov {
   display: block;
   margin-left: 70px;
@@ -325,12 +373,26 @@ button {
   top: 225px;
   right: 164px;
 }
+@media screen and (min-width: 480px) {
+  .main-section__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 80px;
+    top: 40px;
+  }
+}
 .main-section__social-icon {
   width: 32px;
   height: 30px;
   fill: white;
 }
-.main-section__social-item:not(:last-child) {
+@media screen and (min-width: 480px) {
+  .main-section__social-icon {
+    margin-right: 15px;
+  }
+}
+.main-section__social-icon-item:not(:last-child) {
   margin-bottom: 25px;
 }
 
@@ -338,6 +400,11 @@ button {
   width: 1360px;
   padding-top: 78px;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .description-section {
+    width: 480px;
+  }
 }
 .description-section__title {
   text-align: center;
@@ -368,6 +435,12 @@ button {
   background-image: url(../../images/watch-section.png);
   position: relative;
 }
+@media screen and (min-width: 480px) {
+  .watch-section {
+    width: 480px;
+    height: 480px;
+  }
+}
 .watch-section__button {
   font-family: "HeadlandOne";
   font-size: 24px;
@@ -384,12 +457,27 @@ button {
   top: 44%;
   left: 44%;
 }
-
+@media screen and (min-width: 480px) {
+  .watch-section__button {
+    top: 180px;
+    left: 115px;
+  }
+}
 .language-section {
   width: 1360px;
   height: 664px;
   background-image: url(../../images/language-section.png);
   padding: 33px 162px 40px 166px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .language-section {
+    width: 480px;
+    height: 928px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 .language-section__title {
   font-size: 32px;
@@ -398,6 +486,11 @@ button {
   text-align: center;
   margin-bottom: 47px;
   font-family: "HeadlandOne";
+}
+@media screen and (min-width: 480px) {
+  .language-section__title {
+    margin-right: 115px;
+  }
 }
 .language-section__list {
   width: 1030px;
@@ -410,6 +503,12 @@ button {
   list-style: none;
   padding: 0px;
 }
+@media screen and (min-width: 480px) {
+  .language-section__list {
+    width: 360px;
+    height: 768px-;
+  }
+}
 .language-section__item {
   width: 320px;
   height: 240px;
@@ -417,20 +516,43 @@ button {
   text-align: center;
   padding: 36px 30px;
 }
-.language-section__item:nth-child(3n+1) {
-  margin-right: 35px;
+@media screen and (min-width: 480px) {
+  .language-section__item {
+    width: 170px;
+    padding: 20px 20px;
+  }
+  .language-section__item:nth-child(odd) {
+    margin-right: 20px;
+  }
+  .language-section__item:nth-child(1) {
+    margin-bottom: 24px;
+  }
+  .language-section__item:nth-child(2) {
+    margin-bottom: 24px;
+  }
+  .language-section__item:nth-child(3) {
+    margin-bottom: 24px;
+  }
+  .language-section__item:nth-child(4) {
+    margin-bottom: 24px;
+  }
 }
-.language-section__item:nth-child(3n+2) {
-  margin-right: 35px;
-}
-.language-section__item:nth-child(1) {
-  margin-bottom: 24px;
-}
-.language-section__item:nth-child(2) {
-  margin-bottom: 24px;
-}
-.language-section__item:nth-child(3) {
-  margin-bottom: 24px;
+@media screen and (min-width: 1200px) {
+  .language-section__item:nth-child(3n+1) {
+    margin-right: 35px;
+  }
+  .language-section__item:nth-child(3n+2) {
+    margin-right: 35px;
+  }
+  .language-section__item:nth-child(1) {
+    margin-bottom: 24px;
+  }
+  .language-section__item:nth-child(2) {
+    margin-bottom: 24px;
+  }
+  .language-section__item:nth-child(3) {
+    margin-bottom: 24px;
+  }
 }
 .language-section__text {
   font-size: 24px;
@@ -454,6 +576,11 @@ button {
 .img-section {
   width: 1360px;
   height: 268px;
+}
+@media screen and (min-width: 480px) {
+  .img-section {
+    width: 480px;
+  }
 }
 
 .clan-modal {
