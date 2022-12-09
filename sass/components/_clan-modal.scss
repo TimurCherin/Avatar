@@ -1,40 +1,88 @@
 .clan-modal {
-    width: 600px;
-    height: 404px;
     background-image: url(/images/modal-clan.png);
     position: fixed;
-    top: 20%;
-    left: 28%;
-    padding: 100px 80px 23px 80px;
+    padding: 50px 60px 10px 60px;
     z-index: 2;
     text-align: center;
     transition-duration: 800ms;
     transition-delay: 250ms;
     transform: scale(1);
+    width: 480px;
+    height: 350px;
+    top: 0;
+    left: 0;
+
+    @media screen and (min-width: 480px) {
+            
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 500px;
+        height: 380px;
+        top: 13%;
+        left: 17%;
+        padding: 70px 70px 15px 70px;
+    }
+    
+    @media screen and (min-width: 1360px) {
+        width: 600px;
+        height: 404px;
+        top: 20%;
+        left: 28%;
+        padding: 100px 80px 23px 80px;
+    }
 
     &__text {
         text-align: left;
         color: #0B0E66;
         font-family: $main-font;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.2;
         margin: 0px;
         margin-top: 12px;
+
+        @media screen and (min-width: 480px) {
+            
+        }
+        
+        @media screen and (min-width: 768px) {
+           
+        }
+        
+        @media screen and (min-width: 1360px) {
+            font-size: 24px;
+        }
     }
 
     &__button {
         font-family: $second-font;
-        font-size: 24px;
+        width: 200px;
+        height: 65px;
+        font-size: 17px;
         line-height: 1.25;
         text-align: center;
         color: #26C7EA;   
-        width: 260px;
-        height: 80px;
         background-color: #0B0E66;
         border: 3px solid #26C7EA;
         border-radius: 45px 0px 45px 0px;
         margin-top: 47px;
         cursor: pointer;
+
+        @media screen and (min-width: 480px) {
+            
+        }
+        
+        @media screen and (min-width: 768px) {
+            width: 230px;
+            height: 75px;
+            font-size: 20px;
+        }
+        
+        @media screen and (min-width: 1360px) {
+            font-size: 24px;
+            width: 260px;
+            height: 80px;
+        }
     }
 
     &__btn {
@@ -49,11 +97,24 @@
     }
 
     &__input {
-        width: 440px;
+        width: 355px;
         color: #0B0E66;
         height: 40px;
         border: 2px solid #0B0E66;
         cursor: pointer;
+        
+        @media screen and (min-width: 480px) {
+            
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1360px) {
+            width: 440px;
+            height: 40px;
+        }
     }
 }
 

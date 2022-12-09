@@ -310,6 +310,7 @@ ul {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px 0px 20px 0px;
 }
 @media screen and (min-width: 1360px) {
   .main-section__wrap {
@@ -317,86 +318,132 @@ ul {
   }
 }
 .main-section__logo {
-  width: 244px;
-  height: 96px;
-  margin-bottom: 171px;
+  width: 170px;
+  height: 70px;
+  margin-bottom: 70px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .main-section__logo {
-    margin-bottom: 100px;
+    width: 220px;
+    height: 90px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .main-section__logo {
+    margin-bottom: 171px;
+    width: 244px;
+    height: 96px;
   }
 }
 .main-section__description {
-  width: 240px;
-  height: 350px;
+  width: 235px;
+  height: 200px;
   color: white;
-  font-size: 20px;
+  font-size: 13px;
   line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .main-section__description {
+    width: 300px;
+    height: 230px;
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 1360px) {
   .main-section__description {
     width: 376px;
     height: 263px;
+    font-size: 20px;
   }
 }
 .main-section__description p {
   margin: 0px;
 }
 .main-section__avatar {
-  width: 450px;
-  right: 0px;
+  position: absolute;
+  width: 430px;
+  right: -60px;
   bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  .main-section__avatar {
+    right: 59px;
+    width: 580px;
+  }
 }
 @media screen and (min-width: 1360px) {
   .main-section__avatar {
     width: 620px;
     height: 520px;
-    position: absolute;
     right: 110px;
   }
 }
 .main-section__button {
   font-family: "HeadlandOne";
-  font-size: 24px;
+  font-size: 17px;
   line-height: 1.25;
   text-align: center;
   color: #26C7EA;
   padding: 10px 30px;
-  width: 260px;
-  height: 80px;
+  width: 200px;
+  height: 65px;
   background-color: #0B0E66;
   border: 3px solid #26C7EA;
   border-radius: 45px 0px 45px 0px;
-  margin-top: 47px;
+  margin-top: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .main-section__button {
     margin-top: 30px;
+    font-size: 20px;
+    width: 230px;
+    height: 75px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .main-section__button {
+    margin-top: 47px;
+    font-size: 24px;
+    width: 260px;
+    height: 80px;
   }
 }
 .main-section__arrov {
   display: block;
-  margin-left: 70px;
+  margin-left: 25px;
+}
+@media screen and (min-width: 768px) {
+  .main-section__arrov {
+    margin-left: 45px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .main-section__arrov {
+    margin-left: 70px;
+  }
 }
 .main-section__social {
   list-style: none;
   margin: 0px;
   position: absolute;
+  right: 20px;
+  top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .main-section__social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    right: 80px;
-    top: 40px;
+    display: block;
+    top: 220px;
+    right: 59px;
   }
 }
 @media screen and (min-width: 1360px) {
   .main-section__social {
     top: 220px;
     right: 164px;
-    display: block;
   }
 }
 .main-section__social-item {
@@ -413,14 +460,32 @@ ul {
   }
 }
 .main-section__social-icon {
-  width: 32px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   fill: white;
+}
+@media screen and (min-width: 768px) {
+  .main-section__social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .main-section__social-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .description-section {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .description-section {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
 }
 @media screen and (min-width: 1360px) {
   .description-section {
@@ -436,6 +501,11 @@ ul {
   line-height: 1.2;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .description-section__title {
+    font-size: 23px;
+  }
+}
 @media screen and (min-width: 1360px) {
   .description-section__title {
     font-size: 36px;
@@ -447,6 +517,11 @@ ul {
   color: black;
   margin: 16px 0px 8px 0px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .description-section__author {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 1360px) {
   .description-section__author {
@@ -461,6 +536,12 @@ ul {
   width: 220px;
   height: 70px;
 }
+@media screen and (min-width: 768px) {
+  .description-section__img {
+    width: 250px;
+    height: 80px;
+  }
+}
 @media screen and (min-width: 1360px) {
   .description-section__img {
     width: 400px;
@@ -472,6 +553,12 @@ ul {
   height: 240px;
   background-image: url(../../images/watch-section.png);
   position: relative;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .watch-section {
+    height: 385px;
+  }
 }
 @media screen and (min-width: 1360px) {
   .watch-section {
@@ -480,20 +567,37 @@ ul {
 }
 .watch-section__button {
   font-family: "HeadlandOne";
-  font-size: 24px;
+  font-size: 17px;
   line-height: 1.25;
   text-align: center;
   color: #26C7EA;
   padding: 10px 30px;
-  width: 260px;
-  height: 80px;
+  width: 200px;
+  height: 65px;
   background-color: #0B0E66;
   border: 3px solid #26C7EA;
   border-radius: 45px 0px 45px 0px;
   position: absolute;
-  top: 44%;
-  left: 44%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
+@media screen and (min-width: 768px) {
+  .watch-section__button {
+    width: 230px;
+    height: 75px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .watch-section__button {
+    font-size: 24px;
+    width: 260px;
+    height: 80px;
+  }
+}
+
 .language-section {
   background-image: url(../../images/language-section.png);
   background-repeat: no-repeat;
@@ -520,7 +624,7 @@ ul {
   margin-bottom: 47px;
   font-family: "HeadlandOne";
 }
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 768px) {
   .language-section__title {
     font-size: 32px;
   }
@@ -537,6 +641,9 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -554,6 +661,12 @@ ul {
   .language-section__item {
     width: 440px;
     height: 330px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .language-section__item {
+    width: 310px;
+    height: 220px;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -576,7 +689,17 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .language-section__item:not(:nth-child(3n+3)) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .language-section__item:not(:nth-child(3n+3)) {
     margin-right: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .language-section__item:nth-child(-n+4) {
+    margin-bottom: 24px;
   }
 }
 .language-section__text {
@@ -584,6 +707,11 @@ ul {
   line-height: 1;
   color: black;
   font-family: "HeadlandOne";
+}
+@media screen and (min-width: 768px) {
+  .language-section__text {
+    font-size: 27px;
+  }
 }
 @media screen and (min-width: 1360px) {
   .language-section__text {
@@ -594,6 +722,11 @@ ul {
   margin-top: 0px;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .language-section__text:first-child {
+    margin-bottom: 25px;
+  }
+}
 @media screen and (min-width: 1360px) {
   .language-section__text:first-child {
     margin-top: 0px;
@@ -603,6 +736,11 @@ ul {
 .language-section__text:last-child {
   margin-bottom: 0px;
   margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .language-section__text:last-child {
+    margin-top: 25px;
+  }
 }
 @media screen and (min-width: 1360px) {
   .language-section__text:last-child {
@@ -620,6 +758,11 @@ ul {
   background-image: url(../../images/img-section.png);
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .img-section {
+    height: 180px;
+  }
+}
 @media screen and (min-width: 1360px) {
   .img-section {
     height: 268px;
@@ -627,13 +770,9 @@ ul {
 }
 
 .clan-modal {
-  width: 600px;
-  height: 404px;
   background-image: url(/images/modal-clan.png);
   position: fixed;
-  top: 20%;
-  left: 28%;
-  padding: 100px 80px 23px 80px;
+  padding: 50px 60px 10px 60px;
   z-index: 2;
   text-align: center;
   -webkit-transition-duration: 800ms;
@@ -642,29 +781,70 @@ ul {
           transition-delay: 250ms;
   -webkit-transform: scale(1);
           transform: scale(1);
+  width: 480px;
+  height: 350px;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .clan-modal {
+    width: 500px;
+    height: 380px;
+    top: 13%;
+    left: 17%;
+    padding: 70px 70px 15px 70px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .clan-modal {
+    width: 600px;
+    height: 404px;
+    top: 20%;
+    left: 28%;
+    padding: 100px 80px 23px 80px;
+  }
 }
 .clan-modal__text {
   text-align: left;
   color: #0B0E66;
   font-family: "Inter";
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
   margin: 0px;
   margin-top: 12px;
 }
+@media screen and (min-width: 1360px) {
+  .clan-modal__text {
+    font-size: 24px;
+  }
+}
 .clan-modal__button {
   font-family: "HeadlandOne";
-  font-size: 24px;
+  width: 200px;
+  height: 65px;
+  font-size: 17px;
   line-height: 1.25;
   text-align: center;
   color: #26C7EA;
-  width: 260px;
-  height: 80px;
   background-color: #0B0E66;
   border: 3px solid #26C7EA;
   border-radius: 45px 0px 45px 0px;
   margin-top: 47px;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .clan-modal__button {
+    width: 230px;
+    height: 75px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .clan-modal__button {
+    font-size: 24px;
+    width: 260px;
+    height: 80px;
+  }
 }
 .clan-modal__btn {
   width: 14px;
@@ -677,11 +857,17 @@ ul {
   background-color: transparent;
 }
 .clan-modal__input {
-  width: 440px;
+  width: 355px;
   color: #0B0E66;
   height: 40px;
   border: 2px solid #0B0E66;
   cursor: pointer;
+}
+@media screen and (min-width: 1360px) {
+  .clan-modal__input {
+    width: 440px;
+    height: 40px;
+  }
 }
 
 .is-hidden {
@@ -690,19 +876,36 @@ ul {
 }
 
 .join-modal {
-  width: 600px;
-  height: 400px;
   text-align: center;
   background-image: url(../../images/join-modal.png);
   z-index: 45;
   position: fixed;
-  top: 20%;
-  left: 28%;
   -webkit-transition-duration: 800ms;
           transition-duration: 800ms;
   -webkit-transition-delay: 250ms;
           transition-delay: 250ms;
-  padding-top: 50px;
+  padding-top: 40px;
+  width: 480px;
+  height: 350px;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .join-modal {
+    width: 500px;
+    height: 380px;
+    top: 13%;
+    left: 17%;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .join-modal {
+    width: 600px;
+    height: 400px;
+    top: 20%;
+    left: 28%;
+    padding-top: 50px;
+  }
 }
 .join-modal__btn {
   width: 14px;
@@ -717,15 +920,35 @@ ul {
 }
 .join-modal__title {
   font-family: "HeadlandOne";
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.25;
   color: white;
   margin-bottom: 80px;
 }
+@media screen and (min-width: 768px) {
+  .join-modal__title {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .join-modal__title {
+    font-size: 24px;
+  }
+}
 .join-modal__text {
   font-family: "HeadlandOne";
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.25;
   color: white;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .join-modal__text {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .join-modal__text {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */

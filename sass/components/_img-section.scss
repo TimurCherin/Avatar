@@ -1,19 +1,13 @@
 .img-section {
-    // width: 480px;
     height: 95px;
     background-image: url(../../images/img-section.png);
     background-size: cover;
 
-    @media screen and (min-width: 480px) {
-        
-    }
-
     @media screen and (min-width: 768px) {
-            
+            height: 180px;
     }
     
     @media screen and (min-width: 1360px) {
-        // width: 1360px;
         height: 268px;
     }
 }
