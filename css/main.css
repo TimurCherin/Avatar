@@ -253,7 +253,7 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  width: 1030px;
+  width: 440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -302,9 +302,8 @@ ul {
 }
 
 .main-section__wrap {
-  background-image: url("../../images/main.png");
   background-size: cover;
-  background-image: linear-gradient(90.15deg, rgba(54, 82, 106, 0.89) 3%, rgba(55, 107, 151, 0.0712) 86.75%), url("../../images/main.png");
+  background-image: linear-gradient(90.15deg, rgba(54, 82, 106, 0.89) 3%, rgba(55, 107, 151, 0.0712) 86.75%), url("../images/main.png");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -362,20 +361,20 @@ ul {
 }
 .main-section__avatar {
   position: absolute;
-  width: 430px;
+  width: 270px;
   right: -60px;
   bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .main-section__avatar {
-    right: 59px;
-    width: 580px;
+    right: 0px;
+    width: 340px;
   }
 }
 @media screen and (min-width: 1360px) {
   .main-section__avatar {
-    width: 620px;
-    height: 520px;
+    width: 500px;
+    height: 580px;
     right: 110px;
   }
 }
@@ -551,7 +550,7 @@ ul {
 
 .watch-section {
   height: 240px;
-  background-image: url(../../images/watch-section.png);
+  background-image: url(../images/watch-section.png);
   position: relative;
   background-size: cover;
 }
@@ -599,7 +598,7 @@ ul {
 }
 
 .language-section {
-  background-image: url(../../images/language-section.png);
+  background-image: url(../images/language-section.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -755,7 +754,7 @@ ul {
 
 .img-section {
   height: 95px;
-  background-image: url(../../images/img-section.png);
+  background-image: url(../images/img-section.png);
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
@@ -770,7 +769,7 @@ ul {
 }
 
 .clan-modal {
-  background-image: url(/images/modal-clan.png);
+  background-image: url(../images/modal-clan.png);
   position: fixed;
   padding: 50px 60px 10px 60px;
   z-index: 2;
@@ -877,7 +876,7 @@ ul {
 
 .join-modal {
   text-align: center;
-  background-image: url(../../images/join-modal.png);
+  background-image: url(../images/join-modal.png);
   z-index: 45;
   position: fixed;
   -webkit-transition-duration: 800ms;
