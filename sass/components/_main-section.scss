@@ -29,6 +29,53 @@
         
     }
 
+    &__icon {
+        position: absolute;
+        top: -43px;
+        right: 205px;
+        width: 33px;
+        
+        @media screen and (min-width: 768px) {
+            width: 35px;
+        }
+
+        @media screen and (min-width: 1360px) {
+            position: absolute;
+            top: -39px;
+            right: 212px;
+            width: 36px;
+        }
+
+        &-text {
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.2;
+            color: #ffff;
+            position: absolute;
+            right: 165px;
+    
+            @media screen and (min-width: 1360px) {
+                font-family: $main-font;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.2;
+                color: #ffff;
+                position: absolute;
+                top: -10;
+                right: 171px;
+            }
+
+            &:nth-child(1) {
+                right: 252px;
+        
+                @media screen and (min-width: 1360px) {
+                    right: 260px;    
+                }
+            }
+        }
+    }
+
     &__logo {
         width: 170px;
         height: 70px;

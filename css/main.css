@@ -316,6 +316,54 @@ ul {
     padding: 24px 0px 19px 0px;
   }
 }
+.main-section__icon {
+  position: absolute;
+  top: -43px;
+  right: 205px;
+  width: 33px;
+}
+@media screen and (min-width: 768px) {
+  .main-section__icon {
+    width: 35px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .main-section__icon {
+    position: absolute;
+    top: -39px;
+    right: 212px;
+    width: 36px;
+  }
+}
+.main-section__icon-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: white;
+  position: absolute;
+  right: 165px;
+}
+@media screen and (min-width: 1360px) {
+  .main-section__icon-text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: white;
+    position: absolute;
+    top: -10;
+    right: 171px;
+  }
+}
+.main-section__icon-text:nth-child(1) {
+  right: 252px;
+}
+@media screen and (min-width: 1360px) {
+  .main-section__icon-text:nth-child(1) {
+    right: 260px;
+  }
+}
 .main-section__logo {
   width: 170px;
   height: 70px;
